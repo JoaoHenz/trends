@@ -40,20 +40,9 @@ if __name__ == "__main__":
 
     print(interest_over_time_df)
 
-
-
-    # Plotting the data
-    for kw in keywords:
-        plt.plot(interest_over_time_df.index, interest_over_time_df[kw], label=kw)
-
-    plt.title("Interest Over Time")
-    plt.xlabel("Year")
-    plt.ylabel("Interest")
-    plt.xticks(rotation=45)
-    plt.legend()
-    plt.show()
-
+    # TODO
     # 1 discover what is the upper limit and the bottom limit from the word list
 
+    # TODO
     # discover the value of every word comparing to the upper limit and the bottom limit
 
