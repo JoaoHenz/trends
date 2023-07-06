@@ -46,3 +46,5 @@ if __name__ == "__main__":
     # TODO
     # discover the value of every word comparing to the upper limit and the bottom limit
 
+    # TODO
+    # build a graph with ALL the word using what we just gathered
