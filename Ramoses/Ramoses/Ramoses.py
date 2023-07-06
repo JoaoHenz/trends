@@ -2,31 +2,16 @@ from pytrends.request import TrendReq
 import matplotlib.pyplot as plt
 
 
-complete_word_list =[
-        "aa",
-        "aa",
-        "aa",
-        "aa",
-        "aa",
-        "aa",
-        "aa",
-        "aa",
-        "aa",
-        "aa",
-        "aa",
-        "aa",
-        "aa",
-        "aa",
-        "aa",
-    ]
+def get_word_list():
+    word_list = []
 
-#word_list =
-#{
-#    ""
-#}
+    # Read from file
+    with open("WordList.txt", "r") as file:
+        # Read each line and append it to the list
+        for line in file:
+            word_list.append(line.strip())
 
-#def pytrends_response:
-
+    return word_list
 
 ##max 5 words
 def run_google_trends(pytrend, word_list):
@@ -36,33 +21,25 @@ def run_google_trends(pytrend, word_list):
     return pytrend.interest_over_time()
 
 
-
-
-
-
 #def compare_two_words_to_discover_limt(word1, word2):
 #    1+1
 
-
-
-
-
-
 if __name__ == "__main__":
-
     # Connect to Google
     pytrend = TrendReq()
+    
+    complete_word_list = get_word_list()
 
     # Set search term and time frame
     keywords = ["Python programming", 
                 "Data science", 
-                "Data science2", 
                 "Data science2", 
                 "Web development"]
 
     interest_over_time_df = run_google_trends(pytrend, keywords);
 
     print(interest_over_time_df)
+
 
 
     # Plotting the data
