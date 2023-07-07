@@ -1,3 +1,5 @@
+from operator import le
+from re import L
 from pytrends.request import TrendReq
 import matplotlib.pyplot as plt
 
@@ -20,9 +22,20 @@ def run_google_trends(pytrend, word_list):
     # Get interest over time
     return pytrend.interest_over_time()
 
+def get_bigger(word1, word2):
+    word1_counter = 0
+    word2_counter = 0
 
-#def compare_two_words_to_discover_limt(word1, word2):
-#    1+1
+def get_bigger_with_request(word1, word2):
+    interest_over_time_df = run_google_trends(pytrend, keywords);
+
+def find_correct_position(word_list, new_word):
+
+
+class WeightedWord:
+    def __init__(self, weight, word):
+        self.weight = weight
+        self.word = word
 
 if __name__ == "__main__":
     # Connect to Google
@@ -30,15 +43,14 @@ if __name__ == "__main__":
     
     complete_word_list = get_word_list()
 
-    # Set search term and time frame
-    keywords = ["Python programming", 
-                "Data science", 
-                "Data science2", 
-                "Web development"]
+    weighted_words = []
 
-    interest_over_time_df = run_google_trends(pytrend, keywords);
+    weighted_words.append(WeightedWord(0, complete_word_list[0]))
 
-    print(interest_over_time_df)
+    for i in range(1, len(complete_word_list)):
+        weighted_words.insert(find_correct_position(weighted_words, complete_word_list[i]), 
+                              complete_word_list[i])
+
 
     # TODO
     # 1 discover what is the upper limit and the bottom limit from the word list
