@@ -29,8 +29,16 @@ def get_bigger(word1, word2):
 def get_bigger_with_request(word1, word2):
     interest_over_time_df = run_google_trends(pytrend, keywords);
 
-#def find_correct_position(word_list, new_word):
+def is_bigger(word1, word2):
+    # TODO aqui precisa chamar o google trends e tal pra ver se a palavra 1 é de fato maior que a 2
+    return True
 
+def find_correct_position(word_list, new_word):
+    count = 0
+    for word in word_list:
+        if is_bigger(new_word, word):
+            count+=1
+    return count
 
 class WeightedWord:
     def __init__(self, weight, word):
@@ -45,7 +53,7 @@ if __name__ == "__main__":
 
     weighted_words = []
 
-    weighted_words.append(WeightedWord(0, complete_word_list[0]))
+    weighted_words.append(complete_word_list[0])
 
     # Aqui, queridos amigos, o que estou fazendo, È: 
     # estou organizando a lista de palavras em ordem de peso
