@@ -1,0 +1,42 @@
+🎯 OBJETIVO:
+
+Descobrir a viabilidade dos mercados de um determinado nicho, se há demanda suficiente para que este mercado seja interessante.
+
+🤔 ALTERNATIVA:
+
+Utilizar do Google Trends - ferramenta gratuita que demonstra as buscas de uma palavra-chave em um determinado período e compara com outras palavras-chaves - para identificar o interesse das pessoas em determinados nichos de mercado e verificar a viabilidade ou não deste mercado.
+
+A partir do Google Trends criar um Script que colete dados que sejam úteis tanto para quem faz a pesquisa quanto para o cliente final, ou seja, a forma com que estes dados são apresentados, bem como coletados deve ser de fácil uso para quem irá fazer a pesquisa, bem como de fácil aplicação em um relatório para um cliente final.
+
+Suas funções devem ser:
+
+[1] - Automatização da interpretação dos dados individuais de cada palavra-chave: deverá gerar interpretações para rápida análise do cenário da palavra-chave, como "é trend", "está em queda", "está em alta", "está estável",... 
+
+[2] - Transformar os dados coletados em gráficos visuais:
+	- Como será feito estes gráficos?
+	- Será utilizadas todas palavras-chaves no gráfico?
+	- As palavras-chaves serão agrupadas em sub-grupos? (talvez sub-grupos de um 	grupo principal do mercado. Ex: grupo: design; sub-grupo: branding)
+	- Como estes sub-grupos serão definidos?
+
+[3] - Ranquear as palavras em uma lista grande:
+	- O ranquemaneto deve ser feito com base no lapso temporal escolhido ou deve 	considerar períodos anômolos e mudanças de comportamento?
+
+⚠ LIMITAÇÕES DA FERRAMENTA:
+
+- Os dados só existem a partir de 01/01/2004;
+
+- Não é possível alterar o tempo das amostras do Google Trends e elas seguem o seguinte padrão: [amostra em dias] lapso temporal de no mínimo X dias e de no máximo 273 dias; [amostra em semanas] lapso temporal de no mínimo 274 dias e de no máximo x dias; [amostra em meses];
+
+- Os valores apresentados não são absolutos nem relativos. O programa apenas apresenta um percentual em que o valor mais alto, 100%, é o número de pesquisas de uma amostra qualquer dividido pelo número da amostra mais alta, ficando o valor igual ou menor que 1,0;
+
+- Há um limite de requests que o Google Trends permite, acima de X requests a API envia um erro.
+
+🦾 FUNÇÕES ATUAIS DO SCRIPT:
+
+- Ranqueamento de palavras para um determinado lapsto temporal que irá ter amostras em horas, dias ou meses. [parcialmente pendente]
+
+- Gerar gráficos automatizados com base nos dados coletados. [parcialmente pendente]
+
+- Gerar interpretações automatizadas das palavras-chaves a partir dos dados coletados. [parcialmente pendente]
+
+- 
