@@ -39,4 +39,4 @@ Suas funções devem ser:
 
 - Gerar interpretações automatizadas das palavras-chaves a partir dos dados coletados. [parcialmente pendente]
 
-- 
+- - Criar valores relativos com base em alguma referência. [é possível?]
