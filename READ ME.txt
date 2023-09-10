@@ -29,6 +29,8 @@ Suas funções devem ser:
 
 - Os valores apresentados não são absolutos nem relativos. O programa apenas apresenta um percentual em que o valor mais alto, 100%, é o número de pesquisas de uma amostra qualquer dividido pelo número da amostra mais alta, ficando o valor igual ou menor que 1,0;
 
+- Quando uma palavra-chave possui um valor menor do que 0.1 comparada uma palavra-chave com muito mais pesquisa, o Google Trend irá arredondar para 0 o percentual de pesquisa da palavra-chave.
+
 - Há um limite de requests que o Google Trends permite, acima de X requests a API envia um erro.
 
 🦾 FUNÇÕES ATUAIS DO SCRIPT:
