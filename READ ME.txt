@@ -33,6 +33,8 @@ Suas funções devem ser:
 
 - Há um limite de requests que o Google Trends permite, acima de X requests a API envia um erro.
 
+- A API do Google Trends não aceitar intervalos arbitrários, como por exemplo "1-y", mas aceita "12-m" e "5-y". (testar valores)
+
 🦾 FUNÇÕES ATUAIS DO SCRIPT:
 
 - Ranqueamento de palavras para um determinado lapsto temporal que irá ter amostras em horas, dias ou meses. [parcialmente pendente]
